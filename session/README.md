@@ -41,7 +41,7 @@
 	<import resource="classpath:spring/spring-redis.xml" />
 	<import resource="classpath:spring/spring-session.xml" />
 ```
-spring-redis.xml
+### spring-redis.xml
 ```
 
 	<bean id="redisClient" class="com.lljqiu.tools.session.cache.redis.ShardedRedisClient"
@@ -70,10 +70,10 @@ spring-redis.xml
    		</property>
 	</bean>
 ```
-spring-session.xml
+### spring-session.xml
 ```
 
-	<bean name="sessionAnywhereFilter" class="com.asdc.vss.session.session.SessionFilter">
+	<bean name="sessionAnywhereFilter" class="com.lljqiu.tools.session.session.SessionFilter">
 		<property name="sessionTimeouts" value="30" />
 		<property name="sessionStore">
 			<!-- sessionStore的实现 -->
